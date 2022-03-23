@@ -38,7 +38,12 @@ public class PaymentService {
 
     public Payment findPaymentHistoryByOrderId(int orderId) {
         Payment payment=repository.findByOrderId(orderId);
-        logger.info("paymentService findPaymentHistoryByOrderId : {}",new ObjectMapper().writeValueAsString(payment));
+        try {
+			logger.info("paymentService findPaymentHistoryByOrderId : {}",new ObjectMapper().writeValueAsString(payment));
+		} catch (JsonProcessingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         return payment ;
     }
 }

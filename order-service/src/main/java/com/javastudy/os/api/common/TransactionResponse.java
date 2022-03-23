@@ -14,4 +14,27 @@ public class TransactionResponse {
     private double amount;
     private String transactionId;
     private String message;
+    
+    
+	public TransactionResponse(Order order, double amount, String transactionId, String message) {
+		super();
+		this.order = order;
+		this.amount = amount;
+		this.transactionId = transactionId;
+		this.message = message;
+	}
+	public Order getOrder() {
+		return order;
+	}
+	public double getAmount() {
+		return amount;
+	}
+	public String getTransactionId() {
+		return transactionId;
+	}
+	public String getMessage() {
+		return message;
+	}
+    
+    
 }

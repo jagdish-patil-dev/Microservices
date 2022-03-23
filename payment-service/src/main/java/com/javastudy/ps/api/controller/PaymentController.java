@@ -1,5 +1,6 @@
 package com.javastudy.ps.api.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.javastudy.ps.api.entity.Payment;
 import com.javastudy.ps.api.service.PaymentService;
 
@@ -16,7 +17,7 @@ public class PaymentController {
     private PaymentService service;
 
     @PostMapping("/doPayment")
-    public Payment doPayment(@RequestBody Payment payment) {
+    public Payment doPayment(@RequestBody Payment payment) throws JsonProcessingException {
         return service.doPayment(payment);
     }
 

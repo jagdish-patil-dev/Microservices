@@ -13,4 +13,12 @@ public class TransactionRequest {
 
     private Order order;
     private Payment payment;
+	public Order getOrder() {
+		return order;
+	}
+	public Payment getPayment() {
+		return payment;
+	}
+    
+    
 }
