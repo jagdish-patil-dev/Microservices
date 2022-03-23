@@ -1,10 +1,10 @@
-package com.javatechie;
+package com.javastudy.cloud.gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ServiceRegistryApplicationTests {
+class CloudGatewayApplicationTests {
 
 	@Test
 	void contextLoads() {
